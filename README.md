@@ -1,6 +1,14 @@
 # 8-BIT-TTL-CPU
 Step by step documentation of building a `8 bit TTL CPU` from **74xx** logic chips.
 
+## Generating Machine Code
+
+Writing the machine code from assembly code manually is a tedious task. To make life easy, use the assembler.py script to do the same job quickly.
+
+### Usage
+```
+python assembler.py --asmfile="<ASSEMBLY-FILE>"
+```
 
 ## List of alterations from the Ben Eater design-
 
