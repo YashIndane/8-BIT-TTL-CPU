@@ -1,6 +1,29 @@
 # 8-BIT-TTL-CPU
 Step by step documentation of building a `8 bit TTL CPU` from **74xx** logic chips.
 
+## The instruction set
+
+This CPU supports 4 bit instructions, which are the following -
+
+| INS       | OPCODE |  OPERATION |
+|-----------|--------|------------|
+| ***NOP*** | `0x0` | No operation |
+| ***LDA*** | `0x1` | Copy content from RAM at the address to A reg. |
+| ***ADD*** | `0x2` | Add content of RAM at the address to A reg and store in A reg |
+| ***SUB*** | `0x3` | Subtract content of RAM at the address to A reg and store in A reg |
+| ***STA*** | `0x4` | Store content of A reg in RAM at the address |
+| ***LDI*** | `0x5` | Load A reg immediatly with the 4 bit value |
+| ***JMP*** | `0x6` | Jump to the address |
+| ***JC***  | `0x7` | Jump to the address if carry flag set |
+| ***JZ***  | `0x8` | Jump to the address if zero flag set |
+| --        | `0x9` | -- |
+| --        | `0xa` | -- |
+| --        | `0xb` | -- |
+| --        | `0xc` | -- |
+| --        | `0xd` | -- |
+| ***OUT*** | `0xe` | Copy content from A reg to Output reg |
+| ***HLT*** | `0xf` | Halt the CPU |
+
 ## Generating machine code
 
 Writing the machine code from assembly code manually is a tedious task. To make life easy, use the assembler.py script to do the same job quickly.
