@@ -10,6 +10,8 @@ Writing the machine code from assembly code manually is a tedious task. To make 
 python assembler.py --asmfile="<ASSEMBLY-FILE>"
 ```
 
+Sample programs can be found here -> [asm-files](https://github.com/YashIndane/8-BIT-TTL-CPU/tree/main/asm-files)
+
 ## List of alterations from the Ben Eater design-
 
 1. For manual clock pulse increase the value of timing capacitor. If the push button switch is switching more than once in the pulse duration, it will trigger the clock pulse more than once, for a single step. So increase the value of timing capacitor. I used ```0.44 uF``` capacitor.
