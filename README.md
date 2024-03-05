@@ -42,6 +42,10 @@ python assembler.py --asmfile="<ASSEMBLY-FILE>"
 
 Sample programs can be found here -> [asm-files](https://github.com/YashIndane/8-BIT-TTL-CPU/tree/main/asm-files)
 
+## Programming the microcode EEPROMs
+
+You can find a seperate repository with code, schematics & instructions for programming the microcode EEPROMs [here](https://github.com/YashIndane/rpi-eeprom-programmer)
+
 ## List of alterations from Ben Eater's design
 
 1. For manual clock pulse increase the value of timing capacitor. If the push button switch is switching more than once in the pulse duration, it will trigger the clock pulse more than once, for a single step. So increase the value of timing capacitor. I used ```0.44 uF``` capacitor.
