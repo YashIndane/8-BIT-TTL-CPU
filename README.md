@@ -1,6 +1,8 @@
 # 8-BIT-TTL-CPU
 Step by step documentation of building a `8 bit TTL CPU` from **74xx** logic chips.
 
+![cpu8bit](https://github.com/YashIndane/8-BIT-TTL-CPU/assets/53041219/f67a7bfb-0adb-4b5d-b1a2-f94aeea5fe68)
+
 ## The architecture
 
 The SAP-1 computer is a bus-organized computer and makes use of Von-Neumann architecture. It makes use of an 8-bit central bus and has ten main components. A pictorial representation of its architecture is shown below.
