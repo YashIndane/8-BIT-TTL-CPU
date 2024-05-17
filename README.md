@@ -48,10 +48,10 @@ Sample programs can be found here -> [asm-files](https://github.com/YashIndane/8
 
 You can find a seperate repository with code, schematics & instructions for programming the microcode EEPROMs [here](https://github.com/YashIndane/rpi-eeprom-programmer)
 
-## List of alterations from Ben Eater's design
+## List of alterations
 
 1. For manual clock pulse increase the value of timing capacitor. If the push button switch is switching more than once in the pulse duration, it will trigger the clock pulse more than once, for a single step. So increase the value of timing capacitor. I used ```0.44 uF``` capacitor.
 
 2. I connected a ```1k``` resistor between select input of the ```74157s``` on the data selectors, in the RAM module.
 
-3. Ben used ```74273``` (Octal D-Type Flip Flop) along with a ```AND``` gate as his output register. This has some issues & it will generally latch in any value that's coming on the bus even if ```OI``` signal is not active. To solve this just simply use two ```74173s``` to make a 8 bit register (Same as A & B register).
+3. Originally I used ```74273``` (Octal D-Type Flip Flop) along with a ```AND``` gate as his output register. This has some issues & it will generally latch in any value that's coming on the bus even if ```OI``` signal is not active. To solve this just simply use two ```74173s``` to make a 8 bit register (Same as A & B register).
