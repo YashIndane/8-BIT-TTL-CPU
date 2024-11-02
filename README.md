@@ -3,6 +3,14 @@ Step by step documentation of building a `8 bit TTL CPU` from **74xx** logic chi
 
 ![cpu8bit](https://github.com/YashIndane/8-BIT-TTL-CPU/assets/53041219/f67a7bfb-0adb-4b5d-b1a2-f94aeea5fe68)
 
+## Story
+
+Usually for beginners or non-technical guys, its hard to understand how a CPU operates and executes the program. 
+
+There should be a way to understand on how a basic how individual instructions are executed, which gives a fair bit of idea to us. So I decided to make a CPU on breadboards, using 74 series TTL logic chips which are easy to find.
+
+I decided to make a 8 bit CPU that just runs on some Hz frequency (Not GHZ as we want to see what it does), which will help understanding fundamentals of CPU Operations.
+
 ## The architecture
 
 The SAP-1 computer is a bus-organized computer and makes use of Von-Neumann architecture. It makes use of an 8-bit central bus and has ten main components. A pictorial representation of its architecture is shown below.
@@ -32,6 +40,26 @@ This CPU supports 4 bit instructions, which are the following -
 | --        | `0xd` | -- |
 | ***OUT*** | `0xe` | Copy content from A reg to Output reg |
 | ***HLT*** | `0xf` | Halt the CPU |
+
+# CPU Modules
+
+![image](https://github.com/user-attachments/assets/59a3a1da-c59a-4629-928a-780586bfe753)
+
+![image](https://github.com/user-attachments/assets/d96afba4-e87f-4277-bf62-599c0e1126d7)
+
+![image](https://github.com/user-attachments/assets/73b313e4-c2ca-47e2-b384-e4c30146b22e)
+
+![image](https://github.com/user-attachments/assets/b2cd7761-987c-4059-94c4-66c110ba98b1)
+
+![image](https://github.com/user-attachments/assets/785bd5b5-84e3-4bc1-8edc-4ed7fac863c1)
+
+![image](https://github.com/user-attachments/assets/6378d678-908b-4671-a33f-8a99f69fbdfb)
+
+![image](https://github.com/user-attachments/assets/cf809aed-987d-4dc2-a588-3112bd978758)
+
+![image](https://github.com/user-attachments/assets/0daf68ba-2966-4ad4-bc9a-2a99baeef4db)
+
+![image](https://github.com/user-attachments/assets/b80576a2-68b5-4375-9f80-3dc473e3803a)
 
 ## Generating machine code
 
